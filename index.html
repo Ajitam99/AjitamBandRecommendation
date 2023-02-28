@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+      integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+      crossorigin=""
+    />
+    <script
+      defer
+      src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+      integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+      crossorigin=""
+    ></script>
+    <title>AJM &mdash; only the best</title>
+
+    <script defer src="script.js"></script>
+  </head>
+
+  <body>
+    <div class="top-bar">
+      <script
+        type="module"
+        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+      ></script>
+      <script
+        nomodule
+        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+      ></script>
+      <a
+        class="social-icon"
+        href="https://www.facebook.com/matija.susac/"
+        target="_blank"
+      >
+        <ion-icon name="logo-facebook"></ion-icon>
+      </a>
+      <a
+        class="social-icon"
+        href="https://www.instagram.com/matijasusac/"
+        target="_blank"
+      >
+        <ion-icon name="logo-instagram"></ion-icon>
+      </a>
+      <a
+        class="social-icon"
+        href="https://www.youtube.com/@Ajitam99"
+        target="_blank"
+      >
+        <ion-icon name="logo-youtube"></ion-icon>
+      </a>
+    </div>
+    <header class="header sticky">
+      <div class="header-logo">
+        <a href="#"
+          ><img
+            src="https://fontmeme.com/permalink/230227/06da987306c34302d69f69be5c8f3b4a.png"
+            alt="logo"
+            border="0"
+        /></a>
+      </div>
+      <div class="header-sections">
+        <li><a class="section-list" href="#about">ABOUT</a></li>
+        <li>
+          <a class="section-list" href="#recommendations">RECOMMENDATIONS</a>
+        </li>
+        <li><a class="section-list" href="#map">LOCATIONS</a></li>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-main">
+          <h1 class="hero-primary">Your GO TO site for great bands! 💥🍻🎸</h1>
+          <h1 class="hero-secondary hidden">
+            It's always a good time to start listening! 🎶👀
+          </h1>
+        </div>
+        <div class="btn-hero--wrap">
+          <button class="btn btn-hero btn-switch-left" type="button">
+            <ion-icon name="arrow-back-outline"></ion-icon>
+          </button>
+          <button class="btn btn-hero btn-switch-right" type="button">
+            <ion-icon name="arrow-forward-outline"></ion-icon>
+          </button>
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <h1 class="about-header">ABOUT</h1>
+
+        <h2 class="about-text">
+          Heavy metal (or simply metal) is a genre of rock music that developed
+          in the late 1960s and early 1970s, largely in the United Kingdom and
+          United States. With roots in blues rock, psychedelic rock and acid
+          rock, heavy metal bands developed a thick, monumental sound
+          characterized by distorted guitars, extended guitar solos, emphatic
+          beats and loudness. In 1968, three of the genre's most famous pioneers
+          Led Zeppelin, Black Sabbath and Deep Purple were founded. Though they
+          came to attract wide audiences, they were often derided by critics.
+          Several American bands modified heavy metal into more accessible forms
+          during the 1970s: the raw, sleazy sound and shock rock of Alice Cooper
+          and Kiss; the blues-rooted rock of Aerosmith; and the flashy guitar
+          leads and party rock of Van Halen. During the mid-1970s, Judas Priest
+          helped spur the genre's evolution by discarding much of its blues
+          influence, while Motörhead introduced a punk rock sensibility and an
+          increasing emphasis on speed. Beginning in the late 1970s, bands in
+          the new wave of British heavy metal such as Iron Maiden and Saxon
+          followed in a similar vein. By the end of the decade, heavy metal fans
+          became known as "metalheads" or "headbangers". The lyrics of some
+          metal genres became associated with aggression and machismo, an issue
+          that has at times led to accusations of misogyny. During the 1980s,
+          glam metal became popular with groups such as Bon Jovi, Mötley Crüe
+          and Poison. Meanwhile, however, underground scenes produced an array
+          of more aggressive styles: thrash metal broke into the mainstream with
+          bands such as Metallica, Slayer, Megadeth and Anthrax, while other
+          extreme subgenres such as death metal and black metal became and
+          remain subcultural phenomena. Since the mid-1990s, popular styles have
+          expanded the definition of the genre. These include groove metal and
+          nu metal, the latter of which often incorporates elements of grunge
+          and hip-hop.
+        </h2>
+
+        <div class="about-video">
+          <iframe
+            width="615"
+            height="375"
+            src="https://www.youtube.com/embed/uIenL5oEyKg"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+
+      <section class="recommendations" id="recommendations">
+        <h2 class="recommendations-intro">
+          <p class="recommendations-intro-text">RECOMMENDATIONS</p>
+          <ion-icon name="musical-notes-outline"></ion-icon>
+        </h2>
+
+        <h3 class="recommendations-sections">
+          <button type="button" class="btn btnAllGenres">ALL</button>
+          <button type="button" class="btn btnHeavyMetal">HEAVY METAL</button>
+          <button type="button" class="btn btnNWOFHM">NWOFHM</button>
+          <button type="button" class="btn btnThrashMetal">THRASH METAL</button>
+          <button type="button" class="btn btnGrooveMetal">GROOVE METAL</button>
+          <button type="button" class="btn btnProgressiveMetal">
+            PROGRESSIVE METAL
+          </button>
+        </h3>
+        <div class="recommendations-band-list grid--3-cols">
+          <div class="recommendations-band-list-cards genre-heavy-metal">
+            <img
+              class="band-img"
+              src="img/logo-metallica.png"
+              alt="Metallica card"
+            />
+            <div class="band-card">
+              <p class="genre"><span class="genre-div">HEAVY METAL</span></p>
+              <h3 class="band-name">METALLICA</h3>
+              <h4 class="band-active-since">Active since: 1982</h4>
+              <h4 class="band-members">Band members: 4</h4>
+              <button class="btn btn-learn-more" type="button">
+                Learn more
+              </button>
+            </div>
+          </div>
+
+          <div class="recommendations-band-list-cards genre-nwobhm">
+            <img
+              class="band-img"
+              src="img/logo-iron-maiden.png"
+              alt="Metallica card"
+            />
+            <div class="band-card">
+              <p class="genre"><span class="genre-div">NWOBHM</span></p>
+              <h3 class="band-name">IRON MAIDEN</h3>
+              <h4 class="band-active-since">Active since: 1975</h4>
+              <h4 class="band-members">Band members: 6</h4>
+              <button class="btn btn-learn-more" type="button">
+                Learn more
+              </button>
+            </div>
+          </div>
+          <div class="recommendations-band-list-cards genre-nwobhm">
+            <img
+              class="band-img"
+              src="img/logo-judas-priest.png"
+              alt="Metallica card"
+            />
+            <div class="band-card">
+              <p class="genre"><span class="genre-div">NWOBHM</span></p>
+              <h3 class="band-name">JUDAS PRIEST</h3>
+              <h4 class="band-active-since">Active since: 1972</h4>
+              <h4 class="band-members">Band members: 5</h4>
+              <button class="btn btn-learn-more" type="button">
+                Learn more
+              </button>
+            </div>
+          </div>
+          <div class="recommendations-band-list-cards genre-thrash-metal">
+            <img
+              class="band-img"
+              src="img/logo-slayer.png"
+              alt="Metallica card"
+            />
+            <div class="band-card">
+              <p class="genre"><span class="genre-div">THRASH METAL</span></p>
+              <h3 class="band-name">SLAYER</h3>
+              <h4 class="band-active-since">Active since: 1981</h4>
+              <h4 class="band-members">Band members: 4</h4>
+              <button class="btn btn-learn-more" type="button">
+                Learn more
+              </button>
+            </div>
+          </div>
+          <div class="recommendations-band-list-cards genre-groove-metal">
+            <img
+              class="band-img"
+              src="img/logo-pantera.png"
+              alt="Metallica card"
+            />
+            <div class="band-card">
+              <p class="genre"><span class="genre-div">GROOVE METAL</span></p>
+              <h3 class="band-name">PANTERA</h3>
+              <h4 class="band-active-since">Active since: 1989</h4>
+              <h4 class="band-members">Band members: 4</h4>
+              <button class="btn btn-learn-more" type="button">
+                Learn more
+              </button>
+            </div>
+          </div>
+          <div class="recommendations-band-list-cards genre-progressive-metal">
+            <img
+              class="band-img"
+              src="img/logo-opeth.png"
+              alt="Metallica card"
+            />
+            <div class="band-card">
+              <p class="genre">
+                <span class="genre-div">PROGRESSIVE METAL</span>
+              </p>
+              <h3 class="band-name">OPETH</h3>
+              <h4 class="band-active-since">Active since: 1995</h4>
+              <h4 class="band-members">Band members: 6</h4>
+              <button class="btn btn-learn-more" type="button">
+                Learn more
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="map-section" class="map-section">
+        <div class="map-merch-locations">
+          <h3 class="map-merch-locations-text">MERCH LOCATIONS:</h3>
+          <div><ion-icon name="pin-outline"></ion-icon></div>
+        </div>
+        <div id="map">map</div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p class="copyright">
+        Copyright &copy; <span class="year"> 2027</span> by Matija B&G, Inc. All
+        rights reserved.
+      </p>
+      <p class="footer-social-media">
+        <a
+          class="social-icon"
+          href="https://www.facebook.com/matija.susac/"
+          target="_blank"
+        >
+          <ion-icon name="logo-facebook"></ion-icon>
+        </a>
+        <a
+          class="social-icon"
+          href="https://www.instagram.com/matijasusac/"
+          target="_blank"
+        >
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+        <a
+          class="social-icon"
+          href="https://www.youtube.com/@Ajitam99"
+          target="_blank"
+        >
+          <ion-icon name="logo-youtube"></ion-icon>
+        </a>
+      </p>
+    </footer>
+  </body>
+</html>
